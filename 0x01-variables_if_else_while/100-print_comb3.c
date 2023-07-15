@@ -14,13 +14,15 @@ int main(void)
 	{
 		for (n = m + 1; n <= 9; n++)
 			{
-				putchar(m + 48);
-				putchar(n + 48);
-
-				if (m < 8 || n < 9)
+				if (n > m)
 				{
-					putchar(44);
-					putchar(32);
+					putchar(m + 48);
+					putchar(n + 48);
+					if (m < 8 || n < 9)
+					{
+						putchar(44);
+						putchar(32);
+					}
 				}
 			}
 	}
