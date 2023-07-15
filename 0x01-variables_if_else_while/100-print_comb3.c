@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * RETURN: always 0 (succes)
+ * Return: Always 0 (succes)
  */
 
 int main(void)
@@ -17,7 +17,7 @@ int main(void)
 				putchar(m + 48);
 				putchar(n + 48);
 
-				if ((m < 8) || (n < 9))
+				if (m < 8 || n < 9)
 				{
 					putchar(44);
 					putchar(32);
