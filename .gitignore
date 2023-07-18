@@ -1,0 +1,4 @@
+#Ignore all shell files
+#Ignore all .out files
+*~
+*.out
