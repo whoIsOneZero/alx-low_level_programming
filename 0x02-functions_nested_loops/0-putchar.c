@@ -9,6 +9,8 @@
 
 int main(void)
 {
-	print_this();
+	char c[8] = "_putchar";
+
+	_putchar(c);
 	return (0);
 }
