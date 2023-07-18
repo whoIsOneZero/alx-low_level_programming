@@ -3,9 +3,10 @@
 
 #include <stdio.h>
 /**
- * print_this - prints a character
+ * _putchar - prints a character
  *
  * Return: void always
+ * @print_this: character array
  */
 void _putchar(char print_this[])
 {
