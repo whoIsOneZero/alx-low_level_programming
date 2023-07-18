@@ -1,1 +1,1 @@
-void _putchar(char print_this[]);
+void _putchar(char print_this);
