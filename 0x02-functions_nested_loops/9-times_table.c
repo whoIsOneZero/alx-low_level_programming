@@ -15,18 +15,23 @@ void times_table(void)
 		for (b = 0; b <= 9; b++)
 		{
 			result = a * b;
-			/*_putchar(result + '0');*/
-			printf("%d", result);
-			if (b < 9)
+			if (b == 0 )
+			{
+				_putchar(result + '0');
+			}
+			if (result < 10 && b != 0)
 			{
 				_putchar(',');
-				if (result <= 9)
-				{
-					_putchar(32);
-					_putchar(32);
-				}
-				else
-					_putchar(32);
+				_putchar(32);
+				_putchar(32);
+				_putchar(b + '0');
+			}
+			else if (result >= 10)
+			{
+				_putchar(',');
+				_putchar(32);
+				_putchar((result / 10) + '0');
+				_putchar((result % 10) + '0');
 			}
 		}
 		_putchar('\n');
