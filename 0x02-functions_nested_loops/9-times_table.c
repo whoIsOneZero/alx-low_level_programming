@@ -4,7 +4,7 @@
 /**
  * times_table - prints 9 times table
  *
- * Return: void
+ * Return: void.
  */
 void times_table(void)
 {
