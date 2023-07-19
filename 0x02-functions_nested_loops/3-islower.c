@@ -11,7 +11,8 @@
 
 int _islower(int c)
 {
-	int ans = islower(c);
-
-	return (ans);
+	if (islower(c) == 0)
+		return (0);
+	else
+		return (1);
 }
