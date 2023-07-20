@@ -9,11 +9,15 @@ void print_diagonal(int n)
 {
 	int space_c, line_c;
 
-	if (!(n <= 0))
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
 	{
 		for (line_c = 0; line_c < n; line_c++)
 		{
-			for (space_c = 0; space_c <= n; space_c++)
+			for (space_c = 0; space_c < n; space_c++)
 			{
 				if (space_c == line_c)
 					_putchar(92);
