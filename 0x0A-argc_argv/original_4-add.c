@@ -11,29 +11,31 @@
  */
 int main(int argc, char *argv[])
 {
-	int num, i, j, result = 0;
-	char *s;
+	int num, i, result = 0, error = 0;
 
 	if (argc >= 2)
 	{
 		for (i = 1; i < argc; i++)
 		{
 			num = atoi(argv[i]);
-			s = argv[i];
-			j = 0;
-			while (s[j] != '\0')
+			/*If one num. contains symbols that not a digit*/
+			if (argv[i] != 0 && num == 0)
 			{
-				if (s[j] < '0' || s[j] > '9')
-				{
-					printf("Error\n");
-					return (1);
-				}
-				j++;
+				error = 1;
+				break;
 			}
 			/*The summation*/
 			result = result + num;
 		}
-		printf("%d\n", result);
+		if (error == 1)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		else
+		{
+			printf("%d\n", result);
+		}
 	}
 	/*If no argument passed*/
 	else if (argc == 1)
