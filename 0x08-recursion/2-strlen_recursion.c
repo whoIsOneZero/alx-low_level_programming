@@ -1,6 +1,6 @@
 /**
- * __strlen_recursion - check for string length
- * @a: string to be checked
+ * _strlen_recursion - check for string length
+ * @s: string to be checked
  * Return: string length
  */
 int _strlen_recursion(char *s)
@@ -9,5 +9,5 @@ int _strlen_recursion(char *s)
 	{
 		return (0);
 	}
-	return(1 + _strlen_recursion(s + 1));
+	return (1 + _strlen_recursion(s + 1));
 }
