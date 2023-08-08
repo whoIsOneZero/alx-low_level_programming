@@ -14,12 +14,10 @@ char *_strdup(char *str)
 	char *p;
 	/*Get size of str*/
 
-	while (*str != '\0')
+	while (str[size])
 	{
-		str++;
 		size++;
 	}
-	str = str - size; /*Reset the pointer back to start of the string*/
 
 	if (size == 0)
 		return (NULL);
@@ -31,11 +29,13 @@ char *_strdup(char *str)
 	if (p == NULL)
 		return (NULL);
 
-	for (i = 0; i < size; i++)
+	else
 	{
-		*(p + i) = *(str + i);
+		for (i = 0; i < size; i++)
+		{
+			*(p + i) = *(str + i);
+		}
+		*(p + i) = '\0';
 	}
-	*(p + i) = '\0';
-
 	return (p);
 }
