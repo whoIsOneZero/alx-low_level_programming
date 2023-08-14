@@ -1,2 +1,3 @@
 # alx-low_level_programming
-Already had a README.
+C Programming.
+Taks covering various concepts in C.
