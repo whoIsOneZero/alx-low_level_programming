@@ -1,24 +1,36 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
+/**
+ * print_binary - converts decimal to binary - prints it
+ * @n: pointer to decimal number to be 'converted'
+ */
 void print_binary(unsigned long int n)
 {
-	unsigned long int mask = 1UL << (sizeof(n) * 2 - 1);
-    if (n == 0)
-    {
-        printf("0");
-        return;
-    }
+	unsigned long int temp;
+	int shift;
 
-    /*Create a mask with the most significant bit set*/
+	if (n == 0)
+	{
+		printf("0");
+		return;
+	}
 
-    while (mask > 0)
-    {
-        if (n & mask)
-            printf("1");
-        else
-            printf("0");
+	temp = n;
 
-        mask >>= 1;
-    }
+	/*Calc. num. of bits needed to represent the decimal in binary*/
+	/*Dec, stored as bin in memory, is shifted till last bit reached*/
+	for (shift = 0; (temp >>= 1) > 0;)
+	{
+		shift++;
+	}
+
+	/*SHIFT and & to print from MSB to LSB*/
+	for (; shift >= 0; shift--)
+	{
+		if ((n >> shift) & 1)
+			printf("1");
+		else
+			printf("0");
+	}
 }
