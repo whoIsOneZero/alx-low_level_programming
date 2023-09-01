@@ -2,25 +2,26 @@
 #include <stdio.h>
 
 /**
- * flip_bits - flip bits to convert one number to another number
+ * flip_bits - calc. num of bits flipped in converting one number to...
+ * ... another
  * @n: first number
  * @m: second number to convert to
- * Return: number of bits that was needed to flip
+ * Return: number of bits that had to be flipped
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int diff;
-	int counter;
+	int num;
+	unsigned long int xor_ed;
 
-	diff = n ^ m;
-	counter = 0;
+	xor_ed = n ^ m; /*An actual number*/
+	num = 0;
 
-	while (diff)
+	/*Count the number of digits in xor_ed (in binary)*/
+	while (xor_ed != 0)
 	{
-		counter++;
-		diff &= (diff - 1);
+		xor_ed &= (xor_ed - 1); /*Send LSB to 0 till xor_ed -> 0*/
+		num++;
 	}
 
-	return (counter);
+	return (num);
 }
-
