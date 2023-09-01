@@ -20,5 +20,5 @@ int get_bit(unsigned long int n, unsigned int index)
 	this_bit = n >> index;
 
 	/*All other bits -> 0 except LSB*/
-	return (hold & 1);
+	return (this_bit & 1);
 }
