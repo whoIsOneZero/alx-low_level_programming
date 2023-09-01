@@ -15,14 +15,14 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index > 64)
 		return (-1);
 
-	/*What needs to be added to original number in order for the...*/
-	/*...desired bit -> 1 ?*/
+	/*Shift 1 till it aligns with the bit[index] you want to change*/
+	/*101101 & 100 for index 3*/
 	for (to_add = 1; index > 0; index--)
 	{
 		to_add <<= 1;
 	}
 
-	/*The addition makes bit at desired index -> 1*/
+	/*The addition(binary AND) makes bit at desired index -> 1*/
 	*n += to_add;
 
 	return (1);
