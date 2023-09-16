@@ -1,7 +1,10 @@
 # alx-low_level_programming
 ## C Programming.
-C is a powerful and foundational programming language with immense importance in the world of software engineering. Here are a few reasons why C is crucial:
-Efficiency: C allows you to write highly efficient code, making it ideal for system-level programming and developing resource-intensive applications.
+C is a powerful and foundational programming language with immense importance in the world of software engineering. 
+Here are a few reasons why C is crucial:
+
+- Efficiency:
+C allows you to write highly efficient code, making it ideal for system-level programming and developing resource-intensive applications.
 
 - Portability:
 C code can be easily ported to different platforms, making it suitable for creating software that can run on various devices and operating systems.
