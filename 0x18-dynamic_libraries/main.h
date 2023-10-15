@@ -1,6 +1,7 @@
 #ifndef DYN_LIB
 #define DYN_LIB
 
+#include <stdlib.h>
 /* --> Function Prototypes <-- */
 
 int _putchar(char c);
