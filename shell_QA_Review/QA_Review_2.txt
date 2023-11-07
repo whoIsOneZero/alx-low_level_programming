@@ -1,0 +1,158 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+2. Simple shell 0.2
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: Execute /bin/ls -l
+
+Score: 1 out of 1 points
+
+Files: checker.bash, bin_ls_1_arg.bash
+
+Full error (available only 10days) : 235_1036_19769_476549_error.txt
+
+Correct output - case: Execute /bin/ls /var
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "/bin/ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=74af82f3af7c
+LANGUAGE=en_US:en
+PWD=/tmp/correction/5135841227094373040822444885283960333289_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+ - (command)[echo "/bin/ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=74af82f3af7c
+LANGUAGE=en_US:en
+PWD=/tmp/correction/5135841227094373040822444885283960333289_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls_1_arg_1.bash
+
+Correct output - case: Echo the string Holberton
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/echo Holberton" | ./hsh]
+
+[GOT]:
+(stdout)[$ Holberton
+$ ](Length: 14)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[Holberton
+](Length: 10)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=74af82f3af7c
+LANGUAGE=en_US:en
+PWD=/tmp/correction/5135841227094373040822444885283960333289_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, echo_1_arg.bashs

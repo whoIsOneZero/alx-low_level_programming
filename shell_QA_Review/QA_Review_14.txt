@@ -1,0 +1,437 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+14. Variables
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: Execute a command that fails, and display its status with echo $?
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/ls /hbtn
+echo \$?" | ./hsh]
+
+[GOT]:
+(stdout)[$ $ $?
+$ ](Length: 9)
+(stderr)[/bin/ls: cannot access '/hbtn': No such file or directory
+](Length: 58)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[2
+](Length: 2)
+(stderr)[/bin/ls: cannot access '/hbtn': No such file or directory
+](Length: 58)
+(status)[0]
+
+Environment:
+HOSTNAME=546b7241b439
+LANGUAGE=en_US:en
+PWD=/tmp/correction/5329072951246491076835985257137413248964_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+[VALGRIND]:
+==114== Memcheck, a memory error detector
+==114== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==114== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==114== Command: ./hsh
+==114== Parent PID: 111
+==114== 
+==114== Invalid write of size 1
+==114==    at 0x10A09A: _strcpy (in /tmp/correction/5329072951246491076835985257137413248964_5/235/476549/hsh)
+==114==    by 0x1... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, echo_status_fail.bash
+
+Full error (available only 10days) : 235_1048_19872_476549_error.txt
+
+Correct output - case: Execute /bin/ls $HBTN_DIR where HBTN_DIR is “/var”
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/ls \$HBTN_DIR" | ./hsh]
+
+[GOT]:
+(stdout)[$ $ ](Length: 4)
+(stderr)[/bin/ls: cannot access '$HBTN_DIR': No such file or directory
+](Length: 62)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=546b7241b439
+LANGUAGE=en_US:en
+PWD=/tmp/correction/5329072951246491076835985257137413248964_5/235/476549
+HBTN_DIR=/var
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_var.bash
+
+Correct output - case: Execute a command that succeeds and display its status with echo $?
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/ls
+echo \$?" | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+echo_status.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ $?
+$ ](Length: 316)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+echo_status.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+0
+](Length: 309)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=546b7241b439
+LANGUAGE=en_US:en
+PWD=/tmp/correction/5329072951246491076835985257137413248964_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/loc... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, echo_status.bash
+
+Full error (available only 10days) : 235_1048_19874_476549_error.txt
+
+Correct output - case: Set the variable HBTN_ECHO to be /bin/echo, and execute $HTBN_ECHO hbtn
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "\$HBTN_ECHO hbtn" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: $HBTN_ECHO: not found
+$ ](Length: 36)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[hbtn
+](Length: 5)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=546b7241b439
+LANGUAGE=en_US:en
+PWD=/tmp/correction/5329072951246491076835985257137413248964_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+HBTN_ECHO=/bin/echo
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, echo_as_var.bash
+
+Correct output - case: Execute echo $HBTN_UNDEF where HBTN_UNDER does not exist
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "echo \$HBTN_UNDEF" | ./hsh]
+
+[GOT]:
+(stdout)[$ $HBTN_UNDEF
+$ ](Length: 16)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[
+](Length: 1)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=546b7241b439
+LANGUAGE=en_US:en
+PWD=/tmp/correction/5329072951246491076835985257137413248964_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+[VALGRIND]:
+==763== Memcheck, a memory error detector
+==763== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==763== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==763== Command: ./hsh
+==763== Parent PID: 760
+==763== 
+==763== Invalid write of size 1
+==763==    at 0x10A09A: _strcpy (in /tmp/correction/5329072951246491076835985257137413248964_5/235/476549/hsh)
+==763==    by 0x10960B: check_in_path (in /tmp/correction/5329072951246491076835985257137413248964_5/235/476549/hsh)
+==763==    by 0x... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, echo_unknown_var.bash
+
+Full error (available only 10days) : 235_1048_19876_476549_error.txt
+
+Correct output - case: Display shell PID with echo $$
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "echo \$\$" | ./hsh]
+
+[GOT]:
+(stdout)[$ $$
+$ ](Length: 7)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[925
+](Length: 4)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=546b7241b439
+LANGUAGE=en_US:en
+PWD=/tmp/correction/5329072951246491076835985257137413248964_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+[VALGRIND]:
+==925== Memcheck, a memory error detector
+==925== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==925== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==925== Command: ./hsh
+==925== Parent PID: 922
+==925== 
+==925== Invalid write of size 1
+==925==    at 0x10A09A: _strcpy (in /tmp/correction/5329072951246491076835985257137413248964_5/235/476549/hsh)
+==925==    by 0x10960B: check_in_path (in /tmp/correction/5329072951246491076835985257137413248964_5/235/476549/hsh)
+==925==    by 0x109DBE: run_pro... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, echo_pid.bash
+
+Full error (available only 10days) : 235_1048_19877_476549_error.txt
+
+Correct output - case: Execute echo 3 times, one of them with $ $ (no variable)
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "echo HBTN
+echo \$ \$
+echo HBTN" | ./hsh]
+
+[GOT]:
+(stdout)[$ HBTN
+$ $ $
+$ HBTN
+$ ](Length: 22)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[HBTN
+$ $
+HBTN
+](Length: 14)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=546b7241b439
+LANGUAGE=en_US:en
+PWD=/tmp/correction/5329072951246491076835985257137413248964_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+[VALGRIND]:
+==1090== Memcheck, a memory error detector
+==1090== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1090== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1090== Command: ./hsh
+==1090== Parent PID: 1087
+==1090== 
+==1090== Invalid write of size 1
+==1090==    at 0x10A09A: _strcpy (in /tmp/correction/5329072951246491076835985257137413248964_5/235/476549/hsh)
+==1090==    by 0x10960B: check_in_path (in /tmp/correction/53290729512464910768359852571374... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, echo_pid_fake.bash
+
+Full error (available only 10days) : 235_1048_19878_476549_error.txt
+
+Correct output - case: Execute echo $HBTN_VAR where HBTN_VAR contains a string
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "echo \$HBTN_VAR" | ./hsh]
+
+[GOT]:
+(stdout)[$ $HBTN_VAR
+$ ](Length: 14)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[Holberton School
+](Length: 17)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=546b7241b439
+LANGUAGE=en_US:en
+PWD=/tmp/correction/5329072951246491076835985257137413248964_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+HBTN_VAR=Holberton School
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+[VALGRIND]:
+==1256== Memcheck, a memory error detector
+==1256== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1256== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1256== Command: ./hsh
+==1256== Parent PID: 1253
+==1256== 
+==1256== Invalid write of size 1
+==1256==    at 0x10A09A: _strcpy (in /tmp/correction/5329072951246491076835985257137413248964_5/235/476549/hsh)
+==1256==    by 0x10960B: check_in_path (in /tmp/correction/53290729512464910768359852... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, echo_var.bash
+
+Full error (available only 10days) : 235_1048_19879_476549_error.txt

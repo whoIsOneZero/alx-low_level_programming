@@ -1,0 +1,410 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+9. setenv, unsetenv
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: Execute setenv HBTN (only one parameter) and display the environment
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "setenv HBTN
+env" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: setenv: not found
+$ LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+$ 
+](Length: 302)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+](Length: 267)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=877d32d666e5
+LANGUAGE=en_US:en
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDP... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, setenv_one_param.bash
+
+Full error (available only 10days) : 235_1043_19813_476549_error.txt
+
+Correct output - case: Execute setenv without parameter and display the environment
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "setenv
+env" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: setenv: not found
+$ LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+$ 
+](Length: 302)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+](Length: 267)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=877d32d666e5
+LANGUAGE=en_US:en
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, setenv_no_param.bash
+
+Full error (available only 10days) : 235_1043_19814_476549_error.txt
+
+Correct output - case: Display the environment, setenv an existing variable, and display again
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "env
+setenv HBTN_VAR FTW
+env" | ./hsh]
+
+[GOT]:
+(stdout)[$ LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+HBTN_VAR=Holberton
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+$ ./hsh: 2: setenv: not found
+$ LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+HBTN_VAR=Holberton
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+$ 
+](Length: 609)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+HBTN_VAR=Holberton
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, setenv_existing_var.bash
+
+Full error (available only 10days) : 235_1043_19815_476549_error.txt
+
+Correct output - case: Display the environment, set a new variable using setenv, and display the environment again
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "env
+setenv HBTN Holberton
+env" | ./hsh]
+
+[GOT]:
+(stdout)[$ LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+$ ./hsh: 2: setenv: not found
+$ LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+$ 
+](Length: 571)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SH... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, setenv.bash
+
+Full error (available only 10days) : 235_1043_19816_476549_error.txt
+
+Correct output - case: Display the environment, unset an existing environment variable using unsetenv and display the environment again
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "env
+unsetenv HBTN_VAR
+env" | ./hsh]
+
+[GOT]:
+(stdout)[$ LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+HBTN_VAR=Holberton
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+$ ./hsh: 2: unsetenv: not found
+$ LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+HBTN_VAR=Holberton
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+$ 
+](Length: 611)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+HBTN_VAR=Holberton
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, unsetenv.bash
+
+Full error (available only 10days) : 235_1043_19817_476549_error.txt
+
+Correct output - case: Display the environment, unset a not-existing environment variable using unsetenv and display the environment again
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "env
+unsetenv HBTN_VAR
+env" | ./hsh]
+
+[GOT]:
+(stdout)[$ LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+$ ./hsh: 2: unsetenv: not found
+$ LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+$ 
+](Length: 573)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLV... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, unsetenv_not_existing_var.bash
+
+Full error (available only 10days) : 235_1043_19818_476549_error.txt
+
+Correct output - case: Execute unsetenv (without parameter) and display the environment
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "unsetenv
+env" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: unsetenv: not found
+$ LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+$ 
+](Length: 304)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[LANGUAGE=en_US:en
+HOSTNAME=877d32d666e5
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+](Length: 267)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=877d32d666e5
+LANGUAGE=en_US:en
+PWD=/tmp/correction/6367417220315949579106198955940191120867_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPW... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, unsetenv_no_param.bash
+
+Full error (available only 10days) : 235_1043_19819_476549_error.txt

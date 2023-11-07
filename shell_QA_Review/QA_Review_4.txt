@@ -1,0 +1,83 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+4. Simple shell 0.4
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: Exit without parameter
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "exit" | ./hsh]
+
+[GOT]:
+(stdout)[$ ](Length: 2)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=3391d6cef2a6
+LANGUAGE=en_US:en
+PWD=/tmp/correction/7961257748067062598152823337874367612697_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+
+Files: checker.bash, exit_no_arg.bash
+
+Correct output - case: Execute a command that fails, and exit without parameter
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/ls /test_hbtn
+exit" | ./hsh]
+
+[GOT]:
+(stdout)[$ $ ](Length: 4)
+(stderr)[/bin/ls: cannot access '/test_hbtn': No such file or directory
+](Length: 63)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[/bin/ls: cannot access '/test_hbtn': No such file or directory
+](Length: 63)
+(status)[2]
+
+Environment:
+HOSTNAME=3391d6cef2a6
+LANGUAGE=en_US:en
+PWD=/tmp/correction/7961257748067062598152823337874367612697_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, exit_no_arg_1.bash

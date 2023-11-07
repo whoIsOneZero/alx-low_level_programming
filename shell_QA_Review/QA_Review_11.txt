@@ -1,0 +1,451 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+11. ;
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: Test cmd ; cmd ; cmd
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/ls ; /bin/ls ; /bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ /bin/ls
+/bin/ls
+$ ](Length: 20)
+(stderr)[/bin/ls: cannot access ';': No such file or directory
+/bin/ls: cannot access ';': No such file or directory
+](Length: 108)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+cmd_sep_cmd_sep_cmd.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+cmd_sep_cmd_sep_cmd.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+cmd_sep_cmd_sep_cmd.bash
+free_list.... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cmd_sep_cmd_sep_cmd.bash
+
+Full error (available only 10days) : 235_1045_19833_476549_error.txt
+
+Correct output - case: Test cmdfail ; cmd
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/ls hbtnFTW ; /bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ /bin/ls
+$ ](Length: 12)
+(stderr)[/bin/ls: cannot access 'hbtnFTW': No such file or directory
+/bin/ls: cannot access ';': No such file or directory
+](Length: 114)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+cmdfail_sep_cmd.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 311)
+(stderr)[/bin/ls: cannot access 'hbtnFTW': No such file or directory
+](Length: 60)
+(status)[0]
+
+Environment:
+HOSTNAME=7b17359e6af0
+LANGUAGE=en_US:en
+PWD=/tmp/correction/6757498780559566440423073998363275364748_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cmdfail_sep_cmd.bash
+
+Correct output - case: Test cmdfail ; cmdfail
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/ls hbtnFTW ; /bin/ls hbtnFTW" | ./hsh]
+
+[GOT]:
+(stdout)[$ /bin/ls
+$ ](Length: 12)
+(stderr)[/bin/ls: cannot access 'hbtnFTW': No such file or directory
+/bin/ls: cannot access ';': No such file or directory
+/bin/ls: cannot access 'hbtnFTW': No such file or directory
+](Length: 174)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[/bin/ls: cannot access 'hbtnFTW': No such file or directory
+/bin/ls: cannot access 'hbtnFTW': No such file or directory
+](Length: 120)
+(status)[2]
+
+Environment:
+HOSTNAME=7b17359e6af0
+LANGUAGE=en_US:en
+PWD=/tmp/correction/6757498780559566440423073998363275364748_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cmdfail_sep_cmdfail.bash
+
+Correct output - case: Test cmd;cmd (no space)
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/ls;/bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: /bin/ls;/bin/ls: not found
+$ ](Length: 41)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+cmd_sep_cmd_no_space.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+cmd_sep_cmd_no_space.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 632)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=7b17359e6af0
+LANGUAGE=en_US:en
+PWD=/tmp/correction/6757498780559566440423073998363275364748_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cmd_sep_cmd_no_space.bash
+
+Full error (available only 10days) : 235_1045_19836_476549_error.txt
+
+Correct output - case: Test cmd ;
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/ls ;" | ./hsh]
+
+[GOT]:
+(stdout)[$ $ ](Length: 4)
+(stderr)[/bin/ls: cannot access ';': No such file or directory
+](Length: 54)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+cmd_sep.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 303)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=7b17359e6af0
+LANGUAGE=en_US:en
+PWD=/tmp/correction/6757498780559566440423073998363275364748_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cmd_sep.bash
+
+Correct output - case: Test cmd ; cmd
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/ls ; /bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ /bin/ls
+$ ](Length: 12)
+(stderr)[/bin/ls: cannot access ';': No such file or directory
+](Length: 54)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+cmd_sep_cmd.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+cmd_sep_cmd.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 614)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=7b17359e6af0
+LANGUAGE=en_US:en
+PWD=/tmp/correction/6757498780559566440423073998363275364748_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+L... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cmd_sep_cmd.bash
+
+Full error (available only 10days) : 235_1045_19838_476549_error.txt

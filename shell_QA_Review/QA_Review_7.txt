@@ -1,0 +1,105 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+7. Simple shell 0.2.1
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: Execute /bin/ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "/bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls.bash
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 306)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls.bash
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 302)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=2d6830a42405
+LANGUAGE=en_US:en
+PWD=/tmp/correction/5297833737795122410080997660639394799131_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbi... - [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls.bash
+
+Full error (available only 10days) : 235_1037_19774_476549_error.txt

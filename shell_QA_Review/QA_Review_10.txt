@@ -1,0 +1,353 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+10. cd
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: Execute cd without parameter
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "cd
+/bin/pwd" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: cd: not found
+$ /tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+$ ](Length: 100)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[/root
+](Length: 6)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=b309ced53d00
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cd_no_arg.bash
+
+Correct output - case: Remove $HOME and execute cd without parameter
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "cd
+/bin/pwd" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: cd: not found
+$ /tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+$ ](Length: 100)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+](Length: 70)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=b309ced53d00
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+TZ=America/Los_Angeles
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cd_no_arg_rm_home.bash
+
+Correct output - case: Try to cd /root (without permission)
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "cd /root
+/bin/pwd" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: cd: not found
+$ /tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+$ ](Length: 100)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[/root
+](Length: 6)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=b309ced53d00
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cd_no_permission.bash
+
+Correct output - case: Remove OLDPWD and execute cd -
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "cd -
+/bin/pwd" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: cd: not found
+$ /tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+$ ](Length: 100)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+](Length: 140)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=b309ced53d00
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cd_dash_rm_oldpwd.bash
+
+Correct output - case: Cd to /tmp, then to dev and execute cd -
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "cd /tmp
+cd /dev
+cd -
+/bin/pwd" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: cd: not found
+$ ./hsh: 2: cd: not found
+$ ./hsh: 3: cd: not found
+$ /tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+$ ](Length: 152)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[/tmp
+/tmp
+](Length: 10)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=b309ced53d00
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cd_dash.bash
+
+Correct output - case: Execute cd /tmp
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "cd /tmp
+/bin/pwd" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: cd: not found
+$ /tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+$ ](Length: 100)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[/tmp
+](Length: 5)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=b309ced53d00
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cd_normal.bash
+
+Correct output - case: Try to cd /hbtn (Folder does not exist)
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "cd /hbtn
+/bin/pwd" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: cd: not found
+$ /tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+$ ](Length: 100)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+](Length: 70)
+(stderr)[./hsh: 1: cd: can't cd to /hbtn
+](Length: 32)
+(status)[0]
+
+Environment:
+HOSTNAME=b309ced53d00
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cd_not_existing_dir.bash
+
+Correct output - case: Set the variable OLDPWD to /tmp and execute cd -
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "cd -
+/bin/pwd" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: cd: not found
+$ /tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+$ ](Length: 100)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[/tmp
+/tmp
+](Length: 10)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=b309ced53d00
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/tmp
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cd_dash_change_oldpwd.bash
+
+Correct output - case: Set $HOME to /tmp and execute cd without parameter
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "cd
+/bin/pwd" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: cd: not found
+$ /tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+$ ](Length: 100)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[/tmp
+](Length: 5)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=b309ced53d00
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3733169994269321522590101981799137330424_5/235/476549
+TZ=America/Los_Angeles
+HOME=/tmp
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, cd_no_arg_change_home.bash

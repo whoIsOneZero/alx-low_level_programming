@@ -1,0 +1,216 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+16. File as input
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: ./hsh file where file does not exist
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[./hsh /tmp/hbtn_checker_tmp_12001]
+
+[GOT]:
+(stdout)[$ $ ](Length: 4)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[./hsh: 0: Can't open /tmp/hbtn_checker_tmp_12001
+](Length: 49)
+(status)[127]
+
+Environment:
+HOSTNAME=543dc48cb2c1
+LANGUAGE=en_US:en
+PWD=/tmp/correction/2630038999477275074024746822616786230123_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, shell_with_unknown_file.bash
+
+Correct output - case: ./hsh file where file is empty
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[./hsh /tmp/hbtn_checker_tmp_16687]
+
+[GOT]:
+(stdout)[$ $ ](Length: 4)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=543dc48cb2c1
+LANGUAGE=en_US:en
+PWD=/tmp/correction/2630038999477275074024746822616786230123_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+
+Files: checker.bash, shell_with_empty_file.bash
+
+Correct output - case: ./hsh file where file contains echo hbtn
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[./hsh /tmp/hbtn_checker_tmp_26811]
+
+[GOT]:
+(stdout)[$ $ ](Length: 4)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[hbtn
+](Length: 5)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=543dc48cb2c1
+LANGUAGE=en_US:en
+PWD=/tmp/correction/2630038999477275074024746822616786230123_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+
+Files: checker.bash, shell_with_file.bash
+
+Correct output - case: ./hsh file where file contains several /bin/ls and empty lines
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[./hsh /tmp/hbtn_checker_tmp_21466]
+
+[GOT]:
+(stdout)[$ $ ](Length: 4)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+shell_with_file_1.bash
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+shell_with_file_1.bash
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+shell_with_file_1.bash
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, shell_with_file_1.bash
+
+Full error (available only 10days) : 235_1052_19892_476549_error.txt

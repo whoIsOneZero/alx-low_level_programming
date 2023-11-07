@@ -1,0 +1,382 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+13. alias
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: Set an alias to /bin/ls and call ‘alias’ to display the alias list
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "alias ls_alias=/bin/ls
+alias" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: alias: not found
+$ ./hsh: 2: alias: not found
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[ls_alias='/bin/ls'
+](Length: 19)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=aa64032d2aa1
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3305745145626905351122881758485268650410_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, alias_list.bash
+
+Correct output - case: Set an alias to /bin/ls and an alias to this alias, then call the second alias
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "alias ls_alias=/bin/ls
+alias ls_alias_alias=ls_alias
+ls_alias_alias" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: alias: not found
+$ ./hsh: 2: alias: not found
+$ ./hsh: 3: ls_alias_alias: not found
+$ ](Length: 98)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+alias_ls_double.bash
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 311)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=aa64032d2aa1
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3305745145626905351122881758485268650410_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+[VALGRIND]:
+==271== Memcheck, a memory error detector
+==271== Copyright (C) 2002-2017, an... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, alias_ls_double.bash
+
+Full error (available only 10days) : 235_1047_19863_476549_error.txt
+
+Correct output - case: Set three aliases using alias alias1=value1 alias2=value2 ... and display them using alias
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "alias alias1=/bin/ls alias2=/bin/echo alias3=/bin/pwd
+alias" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: alias: not found
+$ ./hsh: 2: alias: not found
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[alias1='/bin/ls'
+alias2='/bin/echo'
+alias3='/bin/pwd'
+](Length: 54)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=aa64032d2aa1
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3305745145626905351122881758485268650410_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, alias_several.bash
+
+Correct output - case: Set three aliases and display two of them using alias alias1 alias2
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "alias alias1=/bin/ls
+alias alias2=/bin/echo
+alias alias3=/bin/pwd
+alias alias1 alias3" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: alias: not found
+$ ./hsh: 2: alias: not found
+$ ./hsh: 3: alias: not found
+$ ./hsh: 4: alias: not found
+$ ](Length: 118)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[alias1='/bin/ls'
+alias3='/bin/pwd'
+](Length: 35)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=aa64032d2aa1
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3305745145626905351122881758485268650410_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, alias_specific.bash
+
+Correct output - case: Set aliases and display in the same command using alias alias1=value1 alias2 alias3=value3 ...
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "alias alias1=/bin/ls alias2=/bin/echo alias1 alias3=/bin/pwd alias1=/bin/echo alias1 alias2" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: alias: not found
+$ ](Length: 31)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[alias1='/bin/ls'
+alias1='/bin/echo'
+alias2='/bin/echo'
+](Length: 55)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=aa64032d2aa1
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3305745145626905351122881758485268650410_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, alias_several_and_display.bash
+
+Correct output - case: Set an alias to /bin/ls and call it
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "alias ls_alias=/bin/ls
+ls_alias" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: alias: not found
+$ ./hsh: 2: ls_alias: not found
+$ ](Length: 63)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+alias_ls.bash
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 304)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=aa64032d2aa1
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3305745145626905351122881758485268650410_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, alias_ls.bash
+
+Correct output - case: Set one alias using alias alias1=value1 alias1=value2 ... and display it using alias
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "alias alias1=/bin/ls alias1=/bin/echo alias1=/bin/pwd
+alias" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: alias: not found
+$ ./hsh: 2: alias: not found
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[alias1='/bin/pwd'
+](Length: 18)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=aa64032d2aa1
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3305745145626905351122881758485268650410_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, alias_several_override.bash
+
+Correct output - case: Set an alias twice to test that it is overwritten
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "alias TEST_OVERWRITE=b
+alias TEST_OVERWRITE=hbtn
+alias" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: alias: not found
+$ ./hsh: 2: alias: not found
+$ ./hsh: 3: alias: not found
+$ ](Length: 89)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[TEST_OVERWRITE='hbtn'
+](Length: 22)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=aa64032d2aa1
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3305745145626905351122881758485268650410_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, alias_overwrite.bash

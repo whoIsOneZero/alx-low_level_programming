@@ -1,0 +1,188 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+15. Comments
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: Execute /bin/echo #Comment (nothing should be printed)
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/echo #This is a comment" | ./hsh]
+
+[GOT]:
+(stdout)[$ #This is a comment
+$ ](Length: 23)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[
+](Length: 1)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=3b4a5689bb02
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3247237374362822901569112446042677533008_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, comment_after_cmd.bash
+
+Correct output - case: Echo a string containing a # symbol inside a word (not a comment)
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/echo HBTN#This is a comment" | ./hsh]
+
+[GOT]:
+(stdout)[$ HBTN#This is a comment
+$ ](Length: 27)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[HBTN#This is a comment
+](Length: 23)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=3b4a5689bb02
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3247237374362822901569112446042677533008_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, comment_after_cmd_print_no_space.bash
+
+Correct output - case: The command line starts with the # symbol
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "# This is a comment" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: #: not found
+$ ](Length: 27)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=3b4a5689bb02
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3247237374362822901569112446042677533008_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, comment.bash
+
+Correct output - case: Echo a word followed by a comment
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/echo HBTN #This is a comment" | ./hsh]
+
+[GOT]:
+(stdout)[$ HBTN #This is a comment
+$ ](Length: 28)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[HBTN
+](Length: 5)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=3b4a5689bb02
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3247237374362822901569112446042677533008_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, comment_after_cmd_print.bash
+
+Correct output - case: Echo a word followed by a comment
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/echo HBTN # This is a comment" | ./hsh]
+
+[GOT]:
+(stdout)[$ HBTN # This is a comment
+$ ](Length: 29)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[HBTN
+](Length: 5)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=3b4a5689bb02
+LANGUAGE=en_US:en
+PWD=/tmp/correction/3247237374362822901569112446042677533008_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, comment_after_cmd_print_space.bash

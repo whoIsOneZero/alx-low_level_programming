@@ -1,0 +1,173 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+6. Simple shell 0.1.1
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: Execute /bin/ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "/bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls.bash
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 306)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls.bash
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 302)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=8bcb80626ba8
+LANGUAGE=en_US:en
+PWD=/tmp/correction/9921356845462760374545019802139298632663_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/us... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls.bash
+
+Full error (available only 10days) : 235_1035_19764_476549_error.txt
+
+Correct output - case: Execute /bin/ls (surrounded by spaces) (medium)
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "                                       /bin/ls                                                                                                                                                                                                                                                                                                                                                                                                                                                     " | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls_medium_input.bash
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 319)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls_medium_input.bash
+checker.bash
+check_in_p... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls_medium_input.bash
+
+Full error (available only 10days) : 235_1035_19765_476549_error.txt
+
+Correct output - case: Execute /bin/ls (surrounded by spaces) (large)
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls_large_input.bash
+
+Full error (available only 10days) : 235_1035_19766_476549_error.txt

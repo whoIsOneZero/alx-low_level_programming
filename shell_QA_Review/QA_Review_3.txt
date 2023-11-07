@@ -1,0 +1,3861 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+3. Simple shell 0.3
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: Execute ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 303)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 299)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDP... - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 303)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 299)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/us... [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_.bash
+
+Full error (available only 10days) : 235_1038_19895_476549_error.txt, 235_1038_19895_476549_error.txt
+
+Correct output - case: Copy the file /bin/ls to hbtn_ls (in the parent’s parent directory) and execute ./.././../hbtn_ls /var
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "./.././../hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+ - (command)[echo "./.././../hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_in_two_parent_dir_2.bash
+
+Correct output - case: Execute ls -l
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "ls -l" | ./hsh]
+
+[GOT]:
+(stdout)[$ total 164
+-rw-r--r-- 1  996  992    93 Sep 20 21:48 AUTHORS
+-rw-r--r-- 1  996  992   658 Sep 20 21:48 README.md
+-rw-r--r-- 1  996  992   145 Sep 20 21:48 _prompt.c
+-rw-r--r-- 1  996  992   459 Sep 20 21:48 add_node.c
+-rw-r--r-- 1  996  992   582 Sep 20 21:48 add_node_end.c
+-rw-r--r-- 1  996  992   376 Sep 20 21:46 allowed_functions
+drwxr-xr-x 4  996  992    28 Sep 20 21:48 backup
+-rw-r--r-- 1  996  992  1088 Sep 20 21:48 check_in_path.c
+-rwxr-xr-x 1  996  992 13315 Sep 20 21:46 checker.bash
+-rw-r--r-- 1  996  992   239 Sep 20 21:48 free_list.c
+-rw-r--r-- 1  996  992   993 Sep 20 21:48 get_cmd.c
+-rw-r--r-- 1  996  992   625 Sep 20 21:48 get_env.c
+-rwxr-xr-x 1 root root 22944 Sep 20 21:48 hsh
+-rw-r--r-- 1  996  992   589 Sep 20 21:48 int_to_string.c
+-rw-r--r-- 1  996  992  3038 Sep 20 21:46 ls_1_arg.bash
+-rw-r--r-- 1  996  992  1540 Sep 20 21:48 main.c
+-rw-r--r-- 1  996  992  1506 Sep 20 21:48 myshell.h
+-rw-r--r-- 1  996  992  1023 Sep 20 21:48 run_prog.c
+-rwxr... - (command)[echo "ls -l" | ./hsh]
+
+[GOT]:
+(stdout)[$ total 164
+-rw-r--r-- 1  996  992   459 Sep 20 21:48 add_node.c
+-rw-r--r-- 1  996  992   582 Sep 20 21:48 add_node_end.c
+-rw-r--r-- 1  996  992   376 Sep 20 21:46 allowed_functions
+-rw-r--r-- 1  996  992    93 Sep 20 21:48 AUTHORS
+drwxr-xr-x 4  996  992    28 Sep 20 21:48 backup
+-rwxr-xr-x 1  996  992 13315 Sep 20 21:46 checker.bash
+-rw-r--r-- 1  996  992  1088 Sep 20 21:48 check_in_path.c
+-rw-r--r-- 1  996  992   239 Sep 20 21:48 free_list.c
+-rw-r--r-- 1  996  992   993 Sep 20 21:48 get_cmd.c
+-rw-r--r-- 1  996  992   625 Sep 20 21:48 get_env.c
+-rwxr-xr-x 1 root root 22944 Sep 20 21:48 hsh
+-rw-r--r-- 1  996  992   589 Sep 20 21:48 int_to_string.c
+-rw-r--r-- 1  996  992  3038 Sep 20 21:46 ls_1_arg.bash
+-rw-r--r-- 1  996  992  1540 Sep 20 21:48 main.c
+-rw-r--r-- 1  996  992  1506 Sep 20 21:48 myshell.h
+-rw-r--r-- 1  996  992   145 Sep 20 21:48 _prompt.c
+-rw-r--r-- 1  996  992   658 Sep 20 21:48 README.md
+-rw-r--r-- 1  996  992  1023 Sep 20 21:48 run_p... [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_1_arg.bash
+
+Full error (available only 10days) : 235_1038_19897_476549_error.txt, 235_1038_19897_476549_error.txt
+
+Correct output - case: Execute /bin/ls /var
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "/bin/ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+ - (command)[echo "/bin/ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls_1_arg_1.bash
+
+Correct output - case: Copy the file /bin/ls to hbtn_ls (in the parent directory) and execute ../hbtn_ls /var
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "../hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+ - (command)[echo "../hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_in_parent_dir.bash
+
+Correct output - case: Copy the file /bin/ls to hbtn_ls (in the parent’s parent directory) and execute ../../hbtn_ls /var
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "../../hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+ - (command)[echo "../../hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_in_two_parent_dir.bash
+
+Correct output - case: Copy the file /bin/ls to hbtn_ls (in the parent’s parent directory) and execute ./.././../////././hbtn_ls /var
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "./.././../////././hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+ - (command)[echo "./.././../////././hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_in_two_parent_dir_3.bash
+
+Correct output - case: Execute /bin/ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "/bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls.bash
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 306)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls.bash
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 302)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbi... - (command)[echo "/bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls.bash
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 306)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls.bash
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 302)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/lo... [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls.bash
+
+Full error (available only 10days) : 235_1038_19902_476549_error.txt, 235_1038_19902_476549_error.txt
+
+Correct output - case: ‘/bin’ is the last element of PATH, execute ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_bin_last.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 316)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_bin_last.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 312)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbi... - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_bin_last.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 316)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_bin_last.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 312)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/loc... [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_path_bin_last.bash
+
+Full error (available only 10days) : 235_1038_19903_476549_error.txt, 235_1038_19903_476549_error.txt
+
+Correct output - case: Execute /bin/ls (surrounded by spaces) (large)
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ... - (command)[echo "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ... [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls_large_input.bash
+
+Full error (available only 10days) : 235_1038_19904_476549_error.txt, 235_1038_19904_476549_error.txt
+
+Correct output - case: Remove the $PATH environment variable and execute /bin/ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "/bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls_empty_path.bash
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 317)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls_empty_path.bash
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 313)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+OLDPWD=/
+_=/usr/bin/env
+ - (command)[echo "/bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls_empty_path.bash
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 317)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls_empty_path.bash
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 313)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+OLDPWD=/
+_=/usr/b... [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls_empty_path.bash
+
+Full error (available only 10days) : 235_1038_19905_476549_error.txt
+
+Correct output - case: Execute /bin/ls -l
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "/bin/ls -l" | ./hsh]
+
+[GOT]:
+(stdout)[$ total 164
+-rw-r--r-- 1  996  992    93 Sep 20 21:48 AUTHORS
+-rw-r--r-- 1  996  992   658 Sep 20 21:48 README.md
+-rw-r--r-- 1  996  992   145 Sep 20 21:48 _prompt.c
+-rw-r--r-- 1  996  992   459 Sep 20 21:48 add_node.c
+-rw-r--r-- 1  996  992   582 Sep 20 21:48 add_node_end.c
+-rw-r--r-- 1  996  992   376 Sep 20 21:46 allowed_functions
+drwxr-xr-x 4  996  992    28 Sep 20 21:48 backup
+-rw-r--r-- 1  996  992  3048 Sep 20 21:46 bin_ls_1_arg.bash
+-rw-r--r-- 1  996  992  1088 Sep 20 21:48 check_in_path.c
+-rwxr-xr-x 1  996  992 13315 Sep 20 21:46 checker.bash
+-rw-r--r-- 1  996  992   239 Sep 20 21:48 free_list.c
+-rw-r--r-- 1  996  992   993 Sep 20 21:48 get_cmd.c
+-rw-r--r-- 1  996  992   625 Sep 20 21:48 get_env.c
+-rwxr-xr-x 1 root root 22944 Sep 20 21:48 hsh
+-rw-r--r-- 1  996  992   589 Sep 20 21:48 int_to_string.c
+-rw-r--r-- 1  996  992  1540 Sep 20 21:48 main.c
+-rw-r--r-- 1  996  992  1506 Sep 20 21:48 myshell.h
+-rw-r--r-- 1  996  992  1023 Sep 20 21:48 run_pro... - (command)[echo "/bin/ls -l" | ./hsh]
+
+[GOT]:
+(stdout)[$ total 164
+-rw-r--r-- 1  996  992   459 Sep 20 21:48 add_node.c
+-rw-r--r-- 1  996  992   582 Sep 20 21:48 add_node_end.c
+-rw-r--r-- 1  996  992   376 Sep 20 21:46 allowed_functions
+-rw-r--r-- 1  996  992    93 Sep 20 21:48 AUTHORS
+drwxr-xr-x 4  996  992    28 Sep 20 21:48 backup
+-rw-r--r-- 1  996  992  3048 Sep 20 21:46 bin_ls_1_arg.bash
+-rwxr-xr-x 1  996  992 13315 Sep 20 21:46 checker.bash
+-rw-r--r-- 1  996  992  1088 Sep 20 21:48 check_in_path.c
+-rw-r--r-- 1  996  992   239 Sep 20 21:48 free_list.c
+-rw-r--r-- 1  996  992   993 Sep 20 21:48 get_cmd.c
+-rw-r--r-- 1  996  992   625 Sep 20 21:48 get_env.c
+-rwxr-xr-x 1 root root 22944 Sep 20 21:48 hsh
+-rw-r--r-- 1  996  992   589 Sep 20 21:48 int_to_string.c
+-rw-r--r-- 1  996  992  1540 Sep 20 21:48 main.c
+-rw-r--r-- 1  996  992  1506 Sep 20 21:48 myshell.h
+-rw-r--r-- 1  996  992   145 Sep 20 21:48 _prompt.c
+-rw-r--r-- 1  996  992   658 Sep 20 21:48 README.md
+-rw-r--r-- 1  996  992  1023 Sep 20 21... [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls_1_arg.bash
+
+Full error (available only 10days) : 235_1038_19906_476549_error.txt, 235_1038_19906_476549_error.txt
+
+Correct output - case: Execute both /bin/ls and ls several times with empty lines and leading and trailing spaces
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "ls
+
+ /bin/ls
+
+     ls
+ls
+ ls     " | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+mix_ls_bin_ls_spaces.bash
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ $ $ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+mix_ls_bin_ls_spaces.bash
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ $ $ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+mix_ls_bin_ls_spaces.bash
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test... - (command)[echo "ls
+
+ /bin/ls
+
+     ls
+ls
+ ls     " | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+mix_ls_bin_ls_spaces.bash
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ $ $ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+mix_ls_bin_ls_spaces.bash
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ $ $ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+mix_ls_bin_ls_spaces.bash
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+str... [Diff had to be removed because it was too long]
+
+Files: checker.bash, mix_ls_bin_ls_spaces.bash
+
+Full error (available only 10days) : 235_1038_19907_476549_error.txt, 235_1038_19907_476549_error.txt
+
+Correct output - case: Execute ls 4 times (with leading and trailing spaces)
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "ls
+     ls
+ls
+ ls     " | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_spaces.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_spaces.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_spaces.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ AUTHORS
+README.md
+_prompt.c
+add_nod... - (command)[echo "ls
+     ls
+ls
+ ls     " | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_spaces.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_spaces.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_spaces.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ add_node.c
+add_node_end.... [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_spaces.bash
+
+Full error (available only 10days) : 235_1038_19908_476549_error.txt, 235_1038_19908_476549_error.txt
+
+Correct output - case: Set PATH to be an empty string and execute ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ ](Length: 2)
+(stderr)[](Length: 0)
+(status)[139]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[./hsh: 1: ls: not found
+](Length: 24)
+(status)[127]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=
+OLDPWD=/
+_=/usr/bin/env
+[VALGRIND]:
+==4603== Memcheck, a memory error detector
+==4603== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4603== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4603== Command: ./hsh
+==4603== Parent PID: 4600
+==4603== 
+==4603== Invalid read of size 1
+==4603==    at 0x483EF46: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4603==    by 0x48F3382: strdup (strdup.c:41)
+==4603==    by 0x1094C9: check_in_path (in /tmp/correction/4516758537823852049516154869445876621937_5/235/476549/hsh)
+==4603==    by 0x109DBE: run_prog (in /tmp/corr... - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ ](Length: 2)
+(stderr)[](Length: 0)
+(status)[139]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[./hsh: 1: ls: not found
+](Length: 24)
+(status)[127]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=
+OLDPWD=/
+_=/usr/bin/env
+[VALGRIND]:
+==4757== Memcheck, a memory error detector
+==4757== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4757== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4757== Command: ./hsh
+==4757== Parent PID: 4754
+==4757== 
+==4757== Invalid read of size 1
+==4757==    at 0x483EF46: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4757==    by 0x48F3382: strdup (strdup.c:41)
+==4757==    by 0x1094C9: check_in_path (in /tmp/correction/4516758537823852049516154869445876621937_5/235/476549/hsh)
+==4757==    by 0... [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_empty_path.bash
+
+Full error (available only 10days) : 235_1038_19909_476549_error.txt, 235_1038_19909_476549_error.txt
+
+Correct output - case: Execute /bin/ls 4 times (surrounded by spaces)
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "/bin/ls
+     /bin/ls
+/bin/ls
+   /bin/ls     " | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls_spaces.bash
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls_spaces.bash
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls_spaces.bash
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+s... - (command)[echo "/bin/ls
+     /bin/ls
+/bin/ls
+   /bin/ls     " | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls_spaces.bash
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls_spaces.bash
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls_spaces.bash
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c... [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls_spaces.bash
+
+Full error (available only 10days) : 235_1038_19910_476549_error.txt, 235_1038_19910_476549_error.txt
+
+Correct output - case: Copy the file /bin/ls to hbtn_ls (in the current directory) and execute ./hbtn_ls /var
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "./hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+ - (command)[echo "./hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_in_current_dir.bash
+
+Correct output - case: Copy file /bin/ls to .hbtnls (in the current directory), change PATH to point to PWD and execute `.hbtnls /var`
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo ".hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+OLDPWD=/
+_=/usr/bin/env
+ - (command)[echo ".hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_dot_ls.bash
+
+Correct output - case: Remove all environment variables and execute ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ ](Length: 2)
+(stderr)[](Length: 0)
+(status)[139]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[./hsh: 1: ls: not found
+](Length: 24)
+(status)[127]
+
+Environment:
+_=/usr/bin/env
+ - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ ](Length: 2)
+(stderr)[](Length: 0)
+(status)[139]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[./hsh: 1: ls: not found
+](Length: 24)
+(status)[127]
+
+Environment:
+_=/usr/bin/env
+
+Files: checker.bash, env_ignore_ls.bash
+
+Correct output - case: ‘/bin’ is the first element of PATH, execute ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_bin_first.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 377)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_bin_first.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 373)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876... - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_bin_first.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 377)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_bin_first.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 373)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/45167585378238520495161... [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_path_bin_first.bash
+
+Full error (available only 10days) : 235_1038_19914_476549_error.txt, 235_1038_19914_476549_error.txt
+
+Correct output - case: Remove all environment variables and execute /bin/ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "/bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+env_ignore_bin_ls.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 377)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+env_ignore_bin_ls.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 373)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+_=/usr/bin/env
+ - (command)[echo "/bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+env_ignore_bin_ls.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 377)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+env_ignore_bin_ls.bash
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 373)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+_=/usr/bin/env [Diff had to be removed because it was too long]
+
+Files: checker.bash, env_ignore_bin_ls.bash
+
+Correct output - case: Execute /bin/ls 3 times
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "/bin/ls
+/bin/ls
+/bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls_3_times.bash
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls_3_times.bash
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls_3_times.bash
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+g... - (command)[echo "/bin/ls
+/bin/ls
+/bin/ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls_3_times.bash
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls_3_times.bash
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls_3_times.bash
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+... [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls_3_times.bash
+
+Full error (available only 10days) : 235_1038_19916_476549_error.txt, 235_1038_19916_476549_error.txt
+
+Correct output - case: Execute /bin/ls (surrounded by spaces) (medium)
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "                                       /bin/ls                                                                                                                                                                                                                                                                                                                                                                                                                                                     " | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+bin_ls_medium_input.bash
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 379)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node... - (command)[echo "                                       /bin/ls                                                                                                                                                                                                                                                                                                                                                                                                                                                     " | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+bin_ls_medium_input.bash
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 379)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_fu... [Diff had to be removed because it was too long]
+
+Files: checker.bash, bin_ls_medium_input.bash
+
+Full error (available only 10days) : 235_1038_19917_476549_error.txt, 235_1038_19917_476549_error.txt
+
+Correct output - case: Execute /bin/ls and ls several times
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "ls
+ls
+ls
+/bin/ls
+ls
+ls
+ls
+/bin/ls
+ls
+ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+mix_ls_bin_ls.bash
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+mix_ls_bin_ls.bash
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env... - (command)[echo "ls
+ls
+ls
+/bin/ls
+ls
+ls
+ls
+/bin/ls
+ls
+ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+mix_ls_bin_ls.bash
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+main.c
+mix_ls_bin_ls.bash
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+in... [Diff had to be removed because it was too long]
+
+Files: checker.bash, mix_ls_bin_ls.bash
+
+Full error (available only 10days) : 235_1038_19918_476549_error.txt, 235_1038_19918_476549_error.txt
+
+Correct output - case: PATH does not contain ‘/bin’, execute ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_no_bin.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 374)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_no_bin.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 370)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937... - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_no_bin.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 374)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_no_bin.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 370)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/45167585378238520495161548694... [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_path_no_bin.bash
+
+Full error (available only 10days) : 235_1038_19919_476549_error.txt, 235_1038_19919_476549_error.txt
+
+Correct output - case: ‘/bin’ is in the middle of PATH, execute ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_bin_middle.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 378)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_bin_middle.bash
+main.c
+myshell.h
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 374)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/45167585378238520495161548694458... - (command)[echo "ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_bin_middle.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 378)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+free_list.c
+get_cmd.c
+get_env.c
+hsh
+int_to_string.c
+ls_path_bin_middle.bash
+main.c
+myshell.h
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+](Length: 374)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/451675853782385204951... [Diff had to be removed because it was too long]
+
+Files: checker.bash, ls_path_bin_middle.bash
+
+Full error (available only 10days) : 235_1038_19920_476549_error.txt, 235_1038_19920_476549_error.txt
+
+Correct output - case: Set PATH to be an empty string and execute a command that does not exist
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "hbtn_cmd" | ./hsh]
+
+[GOT]:
+(stdout)[$ ](Length: 2)
+(stderr)[](Length: 0)
+(status)[139]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[./hsh: 1: hbtn_cmd: not found
+](Length: 30)
+(status)[127]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=
+OLDPWD=/
+_=/usr/bin/env
+[VALGRIND]:
+==8490== Memcheck, a memory error detector
+==8490== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8490== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==8490== Command: ./hsh
+==8490== Parent PID: 8487
+==8490== 
+==8490== Invalid read of size 1
+==8490==    at 0x483EF46: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==8490==    by 0x48F3382: strdup (strdup.c:41)
+==8490==    by 0x1094C9: check_in_path (in /tmp/correction/4516758537823852049516154869445876621937_5/235/476549/hsh)
+==8490==    by 0x109DBE: run_prog (... - (command)[echo "hbtn_cmd" | ./hsh]
+
+[GOT]:
+(stdout)[$ ](Length: 2)
+(stderr)[](Length: 0)
+(status)[139]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[./hsh: 1: hbtn_cmd: not found
+](Length: 30)
+(status)[127]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=
+OLDPWD=/
+_=/usr/bin/env
+[VALGRIND]:
+==8644== Memcheck, a memory error detector
+==8644== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8644== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==8644== Command: ./hsh
+==8644== Parent PID: 8641
+==8644== 
+==8644== Invalid read of size 1
+==8644==    at 0x483EF46: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==8644==    by 0x48F3382: strdup (strdup.c:41)
+==8644==    by 0x1094C9: check_in_path (in /tmp/correction/4516758537823852049516154869445876621937_5/235/476549/hsh)
+==86... [Diff had to be removed because it was too long]
+
+Files: checker.bash, empty_path_failing_cmd.bash
+
+Full error (available only 10days) : 235_1038_19921_476549_error.txt, 235_1038_19921_476549_error.txt
+
+Correct output - case: Remove PATH variable and set a PATH1 variable, and execute ls
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "hbtn_ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ AUTHORS
+README.md
+_prompt.c
+add_node.c
+add_node_end.c
+allowed_functions
+backup
+check_in_path.c
+checker.bash
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+core.8503
+core.8657
+free_list.c
+get_cmd.c
+get_env.c
+hbtn_ls
+hsh
+int_to_string.c
+main.c
+myshell.h
+path_path1_var.bash
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 402)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[./hsh: 1: hbtn_ls: not found
+](Length: 29)
+(status)[127]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+PATH1=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+LC_ALL=C
+OLDPWD=/
+_=/usr/bin/env
+ - (command)[echo "hbtn_ls" | ./hsh]
+
+[GOT]:
+(stdout)[$ add_node.c
+add_node_end.c
+allowed_functions
+AUTHORS
+backup
+checker.bash
+check_in_path.c
+core.4616
+core.4770
+core.5889
+core.5897
+core.6044
+core.6053
+core.8503
+core.8657
+free_list.c
+get_cmd.c
+get_env.c
+hbtn_ls
+hsh
+int_to_string.c
+main.c
+myshell.h
+path_path1_var.bash
+_prompt.c
+README.md
+run_prog.c
+shell
+splitter.c
+strcat.c
+strchr.c
+strcmp.c
+strcpy.c
+strdup.c
+strlen.c
+strncmp.c
+test_ls_2
+writeout.c
+$ ](Length: 402)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[./hsh: 1: hbtn_ls: not found
+](Length: 29)
+(status)[127]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+PATH1=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+LC_ALL=en_US.UTF-8
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long]
+
+Files: checker.bash, path_path1_var.bash
+
+Correct output - case: Copy the file /bin/ls to hbtn_ls (in the current directory), set the PATH to PWD, and execute hbtn_ls /var
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+OLDPWD=/
+_=/usr/bin/env
+ - (command)[echo "hbtn_ls /var" | ./hsh]
+
+[GOT]:
+(stdout)[$ backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+$ ](Length: 60)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+](Length: 56)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long]
+
+Files: checker.bash, path_current_dir_ls.bash
+
+Correct output - case: fork should not be called when a command does not exist
+
+Score: 0 out of 1 points
+
+Reason:
+
+ -  - (command)[echo "hbtn" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: hbtn: not found
+$ ](Length: 30)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[./hsh: 1: hbtn: not found
+](Length: 26)
+(status)[127]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=C
+SHLVL=2
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+ - (command)[echo "hbtn" | ./hsh]
+
+[GOT]:
+(stdout)[$ ./hsh: 1: hbtn: not found
+$ ](Length: 30)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[](Length: 0)
+(stderr)[./hsh: 1: hbtn: not found
+](Length: 26)
+(status)[127]
+
+Environment:
+HOSTNAME=ca6db0156964
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4516758537823852049516154869445876621937_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env [Diff had to be removed because it was too long]
+
+Files: checker.bash, unknown_command_no_fork.bash

@@ -1,0 +1,140 @@
+GitHub repository: simple_shell
+    
+Copyright © 2023 ALX, All rights reserved.
+×
+5. Simple shell 1.0
+Commit used:
+URL: Click here
+ID: 59b84fc57d9426ac0e83fb45a17d3b4d711b01f8
+Author: octav8us
+Subject: maybe
+Date: 2023-09-20 23:48:28 +0300
+README is present and not empty
+
+Compile program
+
+Correct output - case: Remove all environment variables, except one, and execute env
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "env" | ./hsh]
+
+[GOT]:
+(stdout)[$ 
+](Length: 3)
+(stderr)[](Length: 0)
+(status)[139]
+
+[EXPECTED]:
+(stdout)[SHLVL=0
+HBTN=Holberton
+](Length: 23)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HBTN=Holberton
+_=/usr/bin/env
+[VALGRIND]:
+==119== Memcheck, a memory error detector
+==119== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==119== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==119== Command: ./hsh
+==119== Parent PID: 116
+==119== 
+==119== Conditional jump or move depends on uninitialised value(s)
+==119==    at 0x10A174: _strlen (in /tmp/correction/4486159525398271772495232504141028928524_5/235/476549/hsh)
+==119==    by 0x109555: check_in_path (in /tmp/correction/4486159525398271772495232504141028928524_5/235/476549/hsh)
+==119==    by 0x109DBE: run_prog (in /tmp/correction/4486159525398271772495232504141028928524_5/235/476549/hsh)
+==119==    by 0x109BAB: main (in /tmp/correction/4486159525398271772495232504141028928524_5/235/476549/hsh)
+==119== 
+==119==... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, env_one_var.bash
+
+Full error (available only 10days) : 235_1042_19808_476549_error.txt
+
+Correct output - case: Execute env
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "env" | ./hsh]
+
+[GOT]:
+(stdout)[$ LANGUAGE=en_US:en
+HOSTNAME=19bf8ea12efa
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/4486159525398271772495232504141028928524_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+$ 
+](Length: 272)
+(stderr)[](Length: 0)
+(status)[0]
+
+[EXPECTED]:
+(stdout)[LANGUAGE=en_US:en
+HOSTNAME=19bf8ea12efa
+SHLVL=1
+HOME=/root
+OLDPWD=/
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LANG=en_US.UTF-8
+PWD=/tmp/correction/4486159525398271772495232504141028928524_5/235/476549
+LC_ALL=en_US.UTF-8
+TZ=America/Los_Angeles
+](Length: 267)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+HOSTNAME=19bf8ea12efa
+LANGUAGE=en_US:en
+PWD=/tmp/correction/4486159525398271772495232504141028928524_5/235/476549
+TZ=America/Los_Angeles
+HOME=/root
+LANG=en_US.UTF-8
+SHLVL=2
+LC_ALL=en_US.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/env
+[VALGRIND]:
+==314== Me... [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long] [Diff had to be removed because it was too long]
+
+Files: checker.bash, env.bash
+
+Full error (available only 10days) : 235_1042_19809_476549_error.txt
+
+Correct output - case: Remove all environment variables and execute env
+
+Score: 0 out of 1 points
+
+Reason:
+
+ - (command)[echo "env" | ./hsh]
+
+[GOT]:
+(stdout)[$ 
+](Length: 3)
+(stderr)[](Length: 0)
+(status)[139]
+
+[EXPECTED]:
+(stdout)[SHLVL=0
+](Length: 8)
+(stderr)[](Length: 0)
+(status)[0]
+
+Environment:
+_=/usr/bin/env
+
+Files: checker.bash, env_ignore_env.bash
