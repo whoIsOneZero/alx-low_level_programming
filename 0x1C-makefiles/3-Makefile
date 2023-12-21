@@ -7,13 +7,12 @@ RM = rm -f # the program to delete files
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
+clean:
+	$(RM) *.~ $(NAME)
+
 oclean:
 	$(RM) $(OBJ)
 
-fclean:
-	$(RM) *.~ $(NAME) $(OBJ)
-
-clean:
-	$(RM) *.~ $(NAME)
+fclean: clean oclean
 
 re: fclean all
