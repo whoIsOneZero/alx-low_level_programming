@@ -12,9 +12,9 @@ oclean:
 	$(RM) $(OBJ)
 
 fclean:
-	$(RM) *.~ *.swp $(NAME) $(OBJ)
+	$(RM) *.~ $(NAME) $(OBJ)
 
 clean:
-	$(RM) *.~ *.swp $(NAME)
+	$(RM) *.~ $(NAME)
 
 re: fclean all
